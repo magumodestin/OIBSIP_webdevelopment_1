@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0f0f;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  color: whitesmoke;
+  font-style: italic;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  background: #0f0f0f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-weight: 900;
+  font-style: italic;
+}
+
+.nav-logo h1 {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: whitesmoke;
+}
+
+.f-red {
+  color: #e63946;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-link {
+  border: none;
+  gap: 24px;
+  align-items: center;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #e63946;
+}
+
+#joinbtn {
+  background: #e63946;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+/* ---------- LAYOUT ---------- */
+main {
+  padding: 0 5%;
+}
+
+.section {
+  padding: 50px 0 10px;
+  scroll-margin-top: 80px;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.section-head.spaced {
+  margin-top: 60px;
+}
+.section-head h2 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+.section-head p {
+  color: #cfcfcf;
+}
+
+.card {
+  background: #1a1a1a;
+  border: 1px solid #2c2c2c;
+  border-radius: 12px;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.05;
+  margin: 18px 0;
+}
+
+.hero-text p {
+  color: #d6d6d6;
+  max-width: 520px;
+  margin-bottom: 26px;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.ELITE_TRAINING_EST_2026 {
+  border: 1px solid #e63946;
+  background-color: #e63946;
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 4px 0;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.Explore_Classes {
+  background: transparent;
+  color: whitesmoke;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 12px 26px;
+  font-weight: 600;
+  font-size: 17px;
+  font-style: italic;
+  cursor: pointer;
+}
+.Explore_Classes:hover {
+  border-color: #e63946;
+}
+
+.Join_Now {
+  background: #e63946;
+  color: whitesmoke;
+  border: 1px solid #e63946;
+  border-radius: 8px;
+  padding: 12px 26px;
+  font-weight: 600;
+  font-size: 17px;
+  font-style: italic;
+  cursor: pointer;
+}
+.Join_Now:hover {
+  background: #c92f3b;
+}
+
+button.full {
+  width: 100%;
+  margin-top: 14px;
+}
+
+/* stats */
+.stats {
+  display: flex;
+  gap: 22px;
+  margin-top: 34px;
+  flex-wrap: wrap;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.stat-tag {
+  background: #e63946;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.stat small {
+  color: #bdbdbd;
+  font-size: 15px;
+}
+
+/* ---------- FEATURES ---------- */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.feature {
+  display: flex;
+  gap: 14px;
+  padding: 20px;
+}
+.icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #e63946;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-style: normal;
+}
+.feature h3 {
+  margin-bottom: 6px;
+}
+.feature p {
+  font-size: 16px;
+  color: #cfcfcf;
+}
+
+/* ---------- CLASSES ---------- */
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.class-card {
+  overflow: hidden;
+}
+.class-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+.card-body {
+  padding: 16px;
+  text-align: center;
+}
+.card-body h3 {
+  margin-bottom: 4px;
+}
+.card-body p {
+  font-size: 16px;
+  color: #d0d0d0;
+  margin: 8px 0 14px;
+}
+.schedule {
+  color: #e63946;
+  font-size: 16px;
+}
+.pill {
+  display: inline-block;
+  border: 1px solid #e63946;
+  color: #e63946;
+  border-radius: 6px;
+  padding: 3px 12px;
+  font-size: 15px;
+}
+
+/* ---------- TRAINERS ---------- */
+.trainer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.trainer-card {
+  padding: 20px;
+  text-align: center;
+}
+.trainer-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #e63946;
+}
+.check {
+  color: #cfcfcf;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/* ---------- TESTIMONIALS ---------- */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.quote {
+  padding: 22px;
+  line-height: 1.5;
+}
+.quote footer {
+  margin-top: 14px;
+  font-weight: 700;
+}
+.quote small {
+  display: block;
+  font-weight: 400;
+  color: #9a9a9a;
+  font-size: 14px;
+}
+
+/* ---------- PRICING ---------- */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 340px));
+  gap: 24px;
+  justify-content: center;
+}
+.plan {
+  position: relative;
+  padding: 28px 24px;
+  text-align: center;
+}
+.plan.popular {
+  border-color: #e63946;
+}
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e63946;
+  border-radius: 6px;
+  padding: 3px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.price {
+  font-size: 44px;
+  font-weight: 800;
+  margin: 8px 0 14px;
+}
+.price small {
+  font-size: 16px;
+  font-weight: 400;
+  color: #aaa;
+}
+.plan ul {
+  list-style: none;
+  text-align: left;
+  display: grid;
+  gap: 8px;
+}
+.plan li::before {
+  content: "✓ ";
+  color: #e63946;
+  font-style: normal;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  margin-top: 70px;
+  padding: 40px 5% 20px;
+  border-top: 1px solid #2c2c2c;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.footer-logo {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.footer p {
+  color: #bdbdbd;
+  font-size: 16px;
+}
+.footer h4 {
+  margin-bottom: 10px;
+}
+.footer-grid a {
+  display: block;
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.footer-grid a:hover {
+  color: #e63946;
+}
+.socials {
+  display: flex;
+  gap: 12px;
+}
+.social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+}
+.social img {
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
+}
+.ig { background: #e63946; }
+.fb { background: #1877f2; }
+.x { background: #2a2a2a; }
+.yt { background: #1a1a1a; }
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid #2c2c2c;
+  font-size: 15px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+  .nav-links {
+    order: 3;
+    width: 100%;
+    gap: 18px;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 17px;
+  }
+  .hero,
+  .feature-grid,
+  .class-grid,
+  .trainer-grid,
+  .testimonial-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-text h1 {
+    font-size: 44px;
+  }
+}
