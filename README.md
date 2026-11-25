@@ -4,7 +4,7 @@ Submitted for the AICTE Oasis Infobyte Student Internship Program (SIP), Web Dev
 
 - **Intern:** Destine Magumo
 - **Task:** Task 1 - Landing Page (FITFORCE gym)
-- **Live demo:** https://magumodestin.github.io/OIBSIP_webdevelopment_1/
+- **Live demo:** https://fitforceweb.vercel.app/
 - **LinkedIn post:** (add link)
 
 ## Objective
